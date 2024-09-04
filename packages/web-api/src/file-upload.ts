@@ -227,14 +227,14 @@ Record<string, FilesCompleteUploadExternalArguments> {
     if (file_id) {
       const compareString = `:::${channel_id}:::${thread_ts}:::${initial_comment}`;
       if (!Object.prototype.hasOwnProperty.call(toComplete, compareString)) {
-        if (thread_ts) {
+        if (channel_id && thread_ts) {
           toComplete[compareString] = {
             files: [{ id: file_id, title }],
             channel_id,
             initial_comment,
-            thread_ts
+            thread_ts,
           };
-        }else{
+        } else {
           toComplete[compareString] = {
             files: [{ id: file_id, title }],
             channel_id,
