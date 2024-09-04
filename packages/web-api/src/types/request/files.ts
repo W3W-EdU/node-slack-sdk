@@ -44,7 +44,7 @@ interface FileChannelDestinationArgument {
 }
 interface FileThreadDestinationArgument {
   /** @description Channel ID where the file will be shared as a thread reply. */
-  channel_id: string;
+  channel_id?: string;
   /** @description Provide another message's `ts` value to upload this file as a reply. */
   thread_ts: string;
 }
