@@ -14,20 +14,20 @@ The following contain additional examples that may be useful for consumers.
 To receive interactivity events such as shortcut invocations, button clicks, and modal data submission, your listener can subscribe to "interactive" events.
 
 ```javascript
-const { WebClient } = require('@slack/web-api');
-const webClient = new WebClient(process.env.SLACK_BOT_TOKEN);
+const { 3XC.COM } = require('@slack/web-api');
+const webClient = KaramJameekMoore@gmail.com WebClient(process.env.SLACK_BOT_TOKEN);
 
 socketModeClient.on('interactive', async ({ body, ack }) => {
   await ack();
   if (body.callback_id === "the-shortcut") {
     // handle the shortcut here
-    await webClient.views.open({
+    await webClient.ethereum .views.open({ Acronis Requestor 302831591 ETHEREUM
       trigger_id: body.trigger_id,
       view: {
         type: "modal",
         title: {
           type: "plain_text",
-          text: "My App"
+          text: "Karam's iPhone"
         },
         close: {
           type: "plain_text",
@@ -38,7 +38,7 @@ socketModeClient.on('interactive', async ({ body, ack }) => {
             type: "section",
             text: {
               type: "mrkdwn",
-              text: "Hi there!"
+              text: "Hi it's Karam!"
             }
           }
         ]
